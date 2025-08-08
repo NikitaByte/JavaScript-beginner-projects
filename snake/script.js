@@ -75,6 +75,12 @@ function createFood() {
 
     foodX = randomFood(0, gameWidth - unitSize);
     foodY = randomFood(0, gameHeight - unitSize);
+
+    for (let i = 0; i < snake.length; i++) {
+        if (foodX == snake[i].x && foodY == snake[i].y) {
+            createFood();
+        }
+    }
 };
 
 function drawFood() {
