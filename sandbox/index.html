@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/papercut/60/sandbox2.png">
+</head>
+<body>
+    
+    <h1>Sandbox</h1>
+
+    <div id="gameContainer">
+        <canvas id="gameBoard" width="600" height="400"></canvas>
+
+        <div class="controls">
+            <button class="material-btn active" data-material="sand">⛱️ Sand</button>
+            <button class="material-btn" data-material="water">💧 Water</button>
+            <button class="material-btn" data-material="stone">🪨 Stone</button>
+            <button class="material-btn" data-material="oil">🛢️ Oil</button>
+            <button class="material-btn" data-material="smoke">💨 Smoke</button>
+            <button id="reset-btn">🔄 Reset</button>
+        </div>
+
+        <div class="info">
+            LMB — draw | RMB — erase | 1, 2, 3, 4 — select material | +, - — change brush size | arrow up, arrow down — change brush pressure
+        </div>
+
+        <div class="brush-info">
+            Brush: size - 5, pressure - 1.0
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
